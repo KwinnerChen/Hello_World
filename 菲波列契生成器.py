@@ -1,4 +1,15 @@
 class Fib:
+	'''菲波列契数列生成器，允许迭代，位置索引和切片（允许步进，但是不允许反向索引，因为数列是无限的）
+	   示例:
+	   Fib()[3];
+	   
+	   Fib()[[3]:10[:2]];
+	   
+	   for i in Fib():
+	       if i > 100:
+	           break
+	       print(i)
+	'''
 	def __init__(self):
 		self.a, self.b = 0, 1
 	def __iter__(self):
