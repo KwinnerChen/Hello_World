@@ -17,7 +17,7 @@ class Fib:
 	def __next__(self):
 		self.a, self.b = self.b, self.a+self.b
 		return self.a
-	def __getitem__(self, n, m=1):
+	def __getitem__(self, n):
 		if isinstance(n, int):
 			for i in range(n):
 				self.a, self.b = self.b, self.a+self.b
